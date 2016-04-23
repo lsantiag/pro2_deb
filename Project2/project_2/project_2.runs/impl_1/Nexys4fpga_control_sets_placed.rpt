@@ -1,0 +1,93 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Sat Apr 23 16:08:57 2016
+| Host         : LAPTOP-50QHPPJG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Nexys4fpga_control_sets_placed.rpt
+| Design       : Nexys4fpga
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    40 |
+| Minimum Number of register sites lost to control set restrictions |    71 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             170 |           54 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             111 |           47 |
+| Yes          | No                    | No                     |             151 |           39 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             145 |           33 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------+-------------------------------------------------------------+-------------------------------+------------------+----------------+
+|                        Clock Signal                       |                        Enable Signal                        |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-----------------------------------------------------------+-------------------------------------------------------------+-------------------------------+------------------+----------------+
+|  PRJ_Demo/instantiate_loader.jtag_loader_6_inst/shift_clk |                                                             |                               |                1 |              1 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/flag_enable                                  | ROJO/BOTSIMCPU/internal_reset |                1 |              2 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/flag_enable                                          | APPCPU/internal_reset         |                1 |              2 |
+|  PRJ_Demo/instantiate_loader.jtag_loader_6_inst/clk_b     |                                                             |                               |                1 |              4 |
+|  JA_OBUF_BUFG[7]                                          |                                                             | APPCPU/active_interrupt       |                2 |              4 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/dp_reg[7]                                            |                               |                1 |              4 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/dp_reg[3]                                            |                               |                1 |              4 |
+|  JA_OBUF_BUFG[7]                                          |                                                             | SSB/seg[6]_i_1_n_0            |                2 |              5 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/dig0_reg[4][0]                                       | DB/clk_cnt_reg[0][0]          |                1 |              5 |
+|  JA_OBUF_BUFG[7]                                          |                                                             | APPCPU/internal_reset         |                3 |              6 |
+|  JA_OBUF_BUFG[7]                                          |                                                             | ROJO/BOTSIMCPU/internal_reset |                3 |              6 |
+|  JA_OBUF_BUFG[7]                                          |                                                             | PRJ_Demo/instruction[7]       |                4 |              8 |
+|  JA_OBUF_BUFG[7]                                          |                                                             | ROJO/BOTSIMPGM/instruction[7] |                3 |              8 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/MotCtl_reg[7][0]                                     |                               |                2 |              8 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/E[1]                                                 | DB/clk_cnt_reg[0][0]          |                2 |              8 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/E[0]                                                 | DB/clk_cnt_reg[0][0]          |                2 |              8 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/Sensors_int_reg[7][0]                        | DB/SR[0]                      |                1 |              8 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/RMDist_int_reg[7][0]                         | DB/SR[0]                      |                1 |              8 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/MapY_reg[7][0]                               |                               |                2 |              8 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/MapX_reg[7][0]                               |                               |                1 |              8 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/LocY_int_reg[7][0]                           | DB/SR[0]                      |                2 |              8 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/LocX_int_reg[7][0]                           | DB/SR[0]                      |                2 |              8 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/E[0]                                         | DB/SR[0]                      |                3 |              8 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/BotInfo_int_reg[7][0]                        | DB/SR[0]                      |                1 |              8 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/spm_enable                                   |                               |                2 |              8 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/spm_enable                                           |                               |                2 |              8 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/t_state_0                                            | APPCPU/internal_reset         |                3 |             12 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/t_state_0                                    | ROJO/BOTSIMCPU/internal_reset |                3 |             12 |
+|  PRJ_Demo/instantiate_loader.jtag_loader_6_inst/shift_clk | PRJ_Demo/instantiate_loader.jtag_loader_6_inst/shift        |                               |                4 |             14 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/t_state_0                                            |                               |                2 |             16 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/WRLDIF/LMDist_reg[7]_0[0]                              | DB/SR[0]                      |                3 |             16 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/t_state_0                                    |                               |                2 |             16 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/BOTSIMCPU/register_enable                              |                               |                2 |             16 |
+|  JA_OBUF_BUFG[7]                                          | APPCPU/register_enable                                      |                               |                2 |             16 |
+|  PRJ_Demo/instantiate_loader.jtag_loader_6_inst/shift_clk | PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_din_int |                               |                5 |             17 |
+|  JA_OBUF_BUFG[7]                                          |                                                             | DB/db_count[31]_i_1_n_0       |                8 |             31 |
+|  JA_OBUF_BUFG[7]                                          | ROJO/WRLDIF/E[0]                                            | DB/SR[0]                      |                7 |             32 |
+|  JA_OBUF_BUFG[7]                                          |                                                             | DB/clk_cnt_reg[0][0]          |               22 |             43 |
+|  JA_OBUF_BUFG[7]                                          | DB/db_count[31]_i_1_n_0                                     |                               |               23 |             88 |
+|  JA_OBUF_BUFG[7]                                          |                                                             |                               |               52 |            165 |
++-----------------------------------------------------------+-------------------------------------------------------------+-------------------------------+------------------+----------------+
+
+

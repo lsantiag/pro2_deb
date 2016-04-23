@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1461452858">
+  <File Type="OPT-DCP" Name="Nexys4fpga_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="ROUTE-DCP" Name="Nexys4fpga_routed.dcp"/>
+  <File Type="PA-TCL" Name="Nexys4fpga.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="Nexys4fpga_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Nexys4fpga_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="Nexys4fpga_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Nexys4fpga.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Nexys4fpga_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Nexys4fpga_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Nexys4fpga_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Nexys4fpga_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Nexys4fpga_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Nexys4fpga_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Nexys4fpga_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Nexys4fpga_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Nexys4fpga_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Nexys4fpga_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Nexys4fpga_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="Nexys4fpga_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Nexys4fpga_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Nexys4fpga_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Nexys4fpga_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="Nexys4fpga.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="Nexys4fpga_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="Nexys4fpga_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="Nexys4fpga_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Nexys4fpga_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Nexys4fpga_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Nexys4fpga_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Nexys4fpga_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Nexys4fpga_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Nexys4fpga_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Nexys4fpga_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Nexys4fpga_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Nexys4fpga_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Nexys4fpga_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Nexys4fpga_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Nexys4fpga_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Nexys4fpga_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Nexys4fpga_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="Nexys4fpga.bit"/>
+  <File Type="BG-BIN" Name="Nexys4fpga.bin"/>
+  <File Type="BITSTR-MSK" Name="Nexys4fpga.msk"/>
+  <File Type="BITSTR-RBT" Name="Nexys4fpga.rbt"/>
+  <File Type="BITSTR-NKY" Name="Nexys4fpga.nky"/>
+  <File Type="BITSTR-BMM" Name="Nexys4fpga_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Nexys4fpga.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Nexys4fpga.sysdef"/>
+  <File Type="BG-BGN" Name="Nexys4fpga.bgn"/>
+  <File Type="BG-DRC" Name="Nexys4fpga.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/world_map.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/world_map.v"/>
+        <Attr Name="ImportTime" Val="1413226050"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/world_map_part1/world_map.ngc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/world_maps/world_map_part1/world_map.ngc"/>
+        <Attr Name="ImportTime" Val="1413226047"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/bot_pgm.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/bot_pgm.v"/>
+        <Attr Name="ImportTime" Val="1413048571"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/world_if.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/world_if.v"/>
+        <Attr Name="ImportTime" Val="1461094353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/map.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/map.v"/>
+        <Attr Name="ImportTime" Val="1461094341"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/kcpsm6.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/kcpsm6.v"/>
+        <Attr Name="ImportTime" Val="1400662020"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/proj2demo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/proj2demo.v"/>
+        <Attr Name="ImportTime" Val="1413345773"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/sevensegment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/sevensegment.v"/>
+        <Attr Name="ImportTime" Val="1459832656"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/nexys4_bit_if.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/nexys4_bit_if.v"/>
+        <Attr Name="ImportTime" Val="1461446875"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/debounce.v"/>
+        <Attr Name="ImportTime" Val="1459832656"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/bot.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/bot.v"/>
+        <Attr Name="ImportTime" Val="1461094326"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/nexys4fpga.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/hdl_part1/nexys4fpga.v"/>
+        <Attr Name="ImportTime" Val="1461448750"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Nexys4fpga"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../project2_release/project2_release/constraints/n4DDRfpga_novideo.xdc"/>
+        <Attr Name="ImportTime" Val="1429048893"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
