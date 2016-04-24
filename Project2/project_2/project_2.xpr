@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="C:/Users/yadne/Documents/GitHub/pro2_deb/Project2/project_2/project_2.xpr">
+<Project Version="7" Minor="10" Path="D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3cbf2f351eed4600922f9b477e7bb8ed"/>
@@ -29,7 +29,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/world_map.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/world_map.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/world_map.v"/>
           <Attr Name="ImportTime" Val="1413226050"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -38,7 +38,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/world_map_part1/world_map.ngc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/world_maps/world_map_part1/world_map.ngc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/world_maps/world_map_part1/world_map.ngc"/>
           <Attr Name="ImportTime" Val="1413226047"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -46,7 +46,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/bot_pgm.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/bot_pgm.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/bot_pgm.v"/>
           <Attr Name="ImportTime" Val="1413048571"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -55,7 +55,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/world_if.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/world_if.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/world_if.v"/>
           <Attr Name="ImportTime" Val="1461094353"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -64,7 +64,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/map.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/map.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/map.v"/>
           <Attr Name="ImportTime" Val="1461094341"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -73,7 +73,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/kcpsm6.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/kcpsm6.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/kcpsm6.v"/>
           <Attr Name="ImportTime" Val="1400662020"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -82,7 +82,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/proj2demo.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/proj2demo.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/proj2demo.v"/>
           <Attr Name="ImportTime" Val="1413345773"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -91,7 +91,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/sevensegment.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/sevensegment.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/sevensegment.v"/>
           <Attr Name="ImportTime" Val="1459832656"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -100,7 +100,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/nexys4_bit_if.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/nexys4_bit_if.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/nexys4_bit_if.v"/>
           <Attr Name="ImportTime" Val="1461446875"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -109,7 +109,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/debounce.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/debounce.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/debounce.v"/>
           <Attr Name="ImportTime" Val="1459832656"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -118,7 +118,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/bot.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/bot.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/bot.v"/>
           <Attr Name="ImportTime" Val="1461094326"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -127,7 +127,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/nexys4fpga.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/nexys4fpga.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/nexys4fpga.v"/>
           <Attr Name="ImportTime" Val="1461448750"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -144,7 +144,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/constraints/n4DDRfpga_novideo.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/constraints/n4DDRfpga_novideo.xdc"/>
           <Attr Name="ImportTime" Val="1429048893"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

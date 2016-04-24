@@ -211,7 +211,7 @@ nexys4_bot_if #(
             .MotCtl(motctl),
             
             .db_sw(db_sw),
-            .db_btns({3'b000,db_btns[4:1],1'b0}),
+            .db_btns({3'b000,db_btns[4:1]}),
             .dig7(dig7),
             .dig6(dig6), 
             .dig5(dig5),

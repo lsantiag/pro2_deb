@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date             : Sat Apr 23 16:52:45 2016
-| Host             : LAPTOP-50QHPPJG running 64-bit major release  (build 9200)
+| Date             : Sat Apr 23 17:34:25 2016
+| Host             : Luis-Personal running 64-bit major release  (build 9200)
 | Command          : 
 | Design           : Nexys4fpga
 | Device           : xc7a100tcsg324-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.153 |
-| Dynamic (W)              | 0.048 |
+| Total On-Chip Power (W)  | 0.152 |
+| Dynamic (W)              | 0.047 |
 | Device Static (W)        | 0.105 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 84.3  |
@@ -49,7 +49,7 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.004 |        3 |       --- |             --- |
+| Clocks                   |     0.003 |        3 |       --- |             --- |
 | Slice Logic              |     0.003 |     1384 |       --- |             --- |
 |   LUT as Logic           |     0.002 |      410 |     63400 |            0.65 |
 |   LUT as Distributed RAM |    <0.001 |       48 |     19000 |            0.25 |
@@ -58,11 +58,11 @@ Table of Contents
 |   F7/F8 Muxes            |    <0.001 |        8 |     63400 |            0.01 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |       67 |       --- |             --- |
-| Signals                  |     0.004 |     1136 |       --- |             --- |
+| Signals                  |     0.004 |     1141 |       --- |             --- |
 | Block RAM                |     0.002 |      2.5 |       135 |            1.85 |
 | I/O                      |     0.035 |       63 |       210 |           30.00 |
 | Static Power             |     0.105 |          |           |                 |
-| Total                    |     0.153 |          |           |                 |
+| Total                    |     0.152 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.028 |       0.013 |      0.015 |
+| Vccint    |       1.000 |     0.027 |       0.012 |      0.015 |
 | Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
 | Vcco33    |       3.300 |     0.014 |       0.010 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -141,7 +141,7 @@ Table of Contents
 +-----------------------------------------------------------+-----------+
 | Name                                                      | Power (W) |
 +-----------------------------------------------------------+-----------+
-| Nexys4fpga                                                |     0.048 |
+| Nexys4fpga                                                |     0.047 |
 |   APPCPU                                                  |     0.003 |
 |     active_interrupt_lut                                  |    <0.001 |
 |     address_loop[0].output_data.pc_vector_mux_lut         |    <0.001 |
@@ -243,8 +243,8 @@ Table of Contents
 |     BOTSIMPGM                                             |    <0.001 |
 |     MAP                                                   |     0.002 |
 |       MAP                                                 |     0.002 |
-|     WRLDIF                                                |     0.001 |
-|   SSB                                                     |     0.002 |
+|     WRLDIF                                                |    <0.001 |
+|   SSB                                                     |     0.001 |
 |     Digit0                                                |    <0.001 |
 |     Digit1                                                |    <0.001 |
 |     Digit2                                                |    <0.001 |

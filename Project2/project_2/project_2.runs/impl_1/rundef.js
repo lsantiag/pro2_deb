@@ -8,9 +8,9 @@ var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "C:/Xilinx/Vivado/2015.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.4/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado/2015.4/bin;";
+  PathVal = "D:/Window_Programs/Vivado/2015.4/ids_lite/ISE/bin/nt64;D:/Window_Programs/Vivado/2015.4/ids_lite/ISE/lib/nt64;D:/Window_Programs/Vivado/2015.4/bin;";
 } else {
-  PathVal = "C:/Xilinx/Vivado/2015.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.4/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado/2015.4/bin;" + PathVal;
+  PathVal = "D:/Window_Programs/Vivado/2015.4/ids_lite/ISE/bin/nt64;D:/Window_Programs/Vivado/2015.4/ids_lite/ISE/lib/nt64;D:/Window_Programs/Vivado/2015.4/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;
@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "init_design", "begin" );
+ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
          "-log Nexys4fpga.vdi -applog -m64 -messageDb vivado.pb -mode batch -source Nexys4fpga.tcl -notrace" );
 

@@ -13,13 +13,13 @@ Command: synth_design -top Nexys4fpga -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
-WARNING: [Synth 8-2507] parameter declaration becomes local in debounce with formal parameter declaration list [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:46]
+WARNING: [Synth 8-2507] parameter declaration becomes local in debounce with formal parameter declaration list [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:46]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 274.285 ; gain = 102.996
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 274.469 ; gain = 103.379
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Nexys4fpga' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:1]
+INFO: [Synth 8-638] synthesizing module 'Nexys4fpga' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:1]
 	Parameter SIMULATE bound to: 0 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'debounce' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:24]
+INFO: [Synth 8-638] synthesizing module 'debounce' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:24]
 	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter DEBOUNCE_FREQUENCY_HZ bound to: 250 - type: integer 
 	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
@@ -27,30 +27,30 @@ INFO: [Synth 8-638] synthesizing module 'debounce' [D:/Masters/CourseSpring16/SO
 	Parameter SIMULATE bound to: 0 - type: integer 
 	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer 
 	Parameter pb0_in bound to: 4'b0001 
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:102]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:103]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:104]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:105]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:106]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:107]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:110]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:111]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:112]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:113]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:114]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:115]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:116]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:117]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:118]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:119]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:120]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:121]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:122]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:123]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:124]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:125]
-INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:24]
-INFO: [Synth 8-638] synthesizing module 'sevensegment' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/sevensegment.v:35]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:103]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:104]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:106]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:107]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:110]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:111]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:112]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:113]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:114]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:115]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:116]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:117]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:118]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:119]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:120]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:121]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:122]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:123]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:124]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:125]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:24]
+INFO: [Synth 8-638] synthesizing module 'sevensegment' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/sevensegment.v:35]
 	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter REFRESH_FREQUENCY_HZ bound to: 500 - type: integer 
 	Parameter RESET_POLARITY_LOW bound to: 0 - type: integer 
@@ -65,7 +65,7 @@ INFO: [Synth 8-638] synthesizing module 'sevensegment' [D:/Masters/CourseSpring1
 	Parameter digit6 bound to: 8'b11011111 
 	Parameter digit7 bound to: 8'b10111111 
 	Parameter digit8 bound to: 8'b01111111 
-INFO: [Synth 8-638] synthesizing module 'Digit' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/sevensegment.v:196]
+INFO: [Synth 8-638] synthesizing module 'Digit' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/sevensegment.v:196]
 	Parameter zero bound to: 7'b1000000 
 	Parameter one bound to: 7'b1111001 
 	Parameter two bound to: 7'b0100100 
@@ -95,235 +95,235 @@ INFO: [Synth 8-638] synthesizing module 'Digit' [D:/Masters/CourseSpring16/SOC/P
 	Parameter lol bound to: 7'b1001111 
 	Parameter lor bound to: 7'b0101111 
 	Parameter blank bound to: 7'b1111111 
-INFO: [Synth 8-256] done synthesizing module 'Digit' (2#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/sevensegment.v:196]
-INFO: [Synth 8-256] done synthesizing module 'sevensegment' (3#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/sevensegment.v:35]
-INFO: [Synth 8-638] synthesizing module 'kcpsm6' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/kcpsm6.v:77]
+INFO: [Synth 8-256] done synthesizing module 'Digit' (2#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/sevensegment.v:196]
+INFO: [Synth 8-256] done synthesizing module 'sevensegment' (3#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/sevensegment.v:35]
+INFO: [Synth 8-638] synthesizing module 'kcpsm6' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/kcpsm6.v:77]
 	Parameter hwbuild bound to: 8'b00000000 
 	Parameter interrupt_vector bound to: 12'b001111111111 
 	Parameter scratch_pad_memory_size bound to: 64 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'LUT6_2' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2' (4#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2' (4#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111100110011110011000000111100000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6' (5#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'XORCY' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:44845]
-INFO: [Synth 8-256] done synthesizing module 'XORCY' (6#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:44845]
-INFO: [Synth 8-638] synthesizing module 'MUXCY' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:21250]
-INFO: [Synth 8-256] done synthesizing module 'MUXCY' (7#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:21250]
-INFO: [Synth 8-638] synthesizing module 'FD' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3724]
+INFO: [Synth 8-256] done synthesizing module 'LUT6' (5#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'XORCY' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:44845]
+INFO: [Synth 8-256] done synthesizing module 'XORCY' (6#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:44845]
+INFO: [Synth 8-638] synthesizing module 'MUXCY' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:21250]
+INFO: [Synth 8-256] done synthesizing module 'MUXCY' (7#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:21250]
+INFO: [Synth 8-638] synthesizing module 'FD' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3724]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'FD' (8#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3724]
-INFO: [Synth 8-638] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3965]
+INFO: [Synth 8-256] done synthesizing module 'FD' (8#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3724]
+INFO: [Synth 8-638] synthesizing module 'FDRE' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3965]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'FDRE' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3965]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized0' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3965]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized0' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized0' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized1' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized0' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized1' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized1' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized2' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized1' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized2' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized2' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized3' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized2' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized3' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized3' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized4' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized3' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized4' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized4' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized5' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized4' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized5' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized5' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized6' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized5' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized6' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized6' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized7' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized6' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized7' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized7' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized8' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized7' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized8' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized8' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized9' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized8' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized9' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000000000000011001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized9' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized10' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized9' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized10' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010101010000000000000000011001100110011001111000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized10' (9#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'FDR' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3952]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized10' (9#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'FDR' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3952]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'FDR' (10#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3952]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized0' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'FDR' (10#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:3952]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized0' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000010101001010011010101010101010101010101010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized0' (10#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized1' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized0' (10#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized1' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized1' (10#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized2' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized1' (10#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized2' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized2' (10#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized3' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized2' (10#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized3' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized3' (10#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized4' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized3' (10#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized4' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000101010001001010010101010101010101010101010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized4' (10#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized11' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized4' (10#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized11' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1011111110111100100011111000110010110011101100001000001110000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized11' (10#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'RAM64M' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:37039]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized11' (10#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'RAM64M' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:37039]
 	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter IS_WCLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'RAM64M' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:37039]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized5' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'RAM64M' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:37039]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized5' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized5' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized12' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized5' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized12' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized12' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized6' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized12' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized6' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized6' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized13' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized6' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized13' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized13' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized7' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized13' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized7' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized7' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized14' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized7' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized14' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized14' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized8' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized14' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized8' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized8' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized15' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized8' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized15' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized15' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized9' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized15' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized9' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized9' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized16' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized9' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized16' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized16' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized10' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized16' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized10' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized10' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized17' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized10' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized17' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized17' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized11' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized17' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized11' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized11' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized18' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized11' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized18' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized18' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized12' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized18' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized12' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0110100101101001011011101000101011001100110011000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized12' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized19' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized12' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized19' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized19' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized13' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized19' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized13' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b1111111111111111111101010101010100000000000000000000111011101110 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized13' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized14' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized13' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized14' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000010000011000000000000101100000000110001000000000001001100 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized14' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized15' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized14' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized15' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000010000000000000000000000000000000000000000100000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized15' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized20' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized15' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized20' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000001100101010101010 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized20' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized16' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized20' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized16' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b1100110000110011111111110000000010000000100000001000000010000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized16' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized21' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized16' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized21' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0101101000111100111111111111111100000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized21' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized17' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized21' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized17' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0111011101110111000000100111011100000000000000000000001000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized17' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized18' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized17' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized18' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000000000111100000000000000000000000000000010001111111111 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized18' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized22' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized18' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized22' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111111111111111111111111111111100000000000001000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized22' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized19' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized22' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized19' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b1111111111111111000100000000000000000000000000000010000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized19' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized20' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized19' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized20' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000001111001010000000000000000000000100001000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized20' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized21' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized20' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized21' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0111011100001000000000000000000000000000000000000000111100000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized21' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized22' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized21' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized22' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b1101000000000000000000000000000000000010000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized22' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized23' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized22' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized23' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000000001001111110011111100000000000100001111011111001110 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized23' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized24' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized23' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized24' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b1100000011001100000000000000000010100000101010100000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized24' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized25' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized24' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized25' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b1000000000000000000000000000000000100000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized25' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized26' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized25' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized26' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0100000000000000000000000000000000000001000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized26' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized23' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized26' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized23' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0000000010000000000000100000000000000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized23' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized24' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized23' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized24' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1010110010101100111111110000000011111111000000001111111100000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized24' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized27' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized24' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized27' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000000000000000000000000010000111011110000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized27' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized25' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized27' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized25' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized25' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized26' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized25' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized26' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111111111111111101010101100110011110000111100001111000011110000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized26' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized28' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized26' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized28' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0011001100110011101010101100110011110000101010100000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized28' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized29' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized28' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized29' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b1010001010000000000000000000000000000000111100000000000011110000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized29' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized30' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized29' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized30' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized30' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized31' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized30' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6_2__parameterized31' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
 	Parameter INIT bound to: 64'b0000000000000000000000000000110100000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized31' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
-INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized27' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-256] done synthesizing module 'LUT6_2__parameterized31' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20332]
+INFO: [Synth 8-638] synthesizing module 'LUT6__parameterized27' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
 	Parameter INIT bound to: 64'b1111101111111111000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized27' (11#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
-INFO: [Synth 8-638] synthesizing module 'RAM32M' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:36730]
+INFO: [Synth 8-256] done synthesizing module 'LUT6__parameterized27' (11#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:20316]
+INFO: [Synth 8-638] synthesizing module 'RAM32M' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:36730]
 	Parameter INIT_A bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter IS_WCLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'RAM32M' (12#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:36730]
-INFO: [Synth 8-256] done synthesizing module 'kcpsm6' (13#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/kcpsm6.v:77]
-INFO: [Synth 8-638] synthesizing module 'proj2demo' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/proj2demo.v:104]
+INFO: [Synth 8-256] done synthesizing module 'RAM32M' (12#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:36730]
+INFO: [Synth 8-256] done synthesizing module 'kcpsm6' (13#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/kcpsm6.v:77]
+INFO: [Synth 8-638] synthesizing module 'proj2demo' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/proj2demo.v:104]
 	Parameter C_JTAG_LOADER_ENABLE bound to: 1 - type: integer 
 	Parameter C_FAMILY bound to: 7S - type: string 
 	Parameter C_RAM_SIZE_KWORDS bound to: 2 - type: integer 
 	Parameter BRAM_ADDRESS_WIDTH bound to: 11 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'RAMB36E1' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:42097]
+INFO: [Synth 8-638] synthesizing module 'RAMB36E1' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:42097]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: FALSE - type: string 
@@ -499,9 +499,9 @@ INFO: [Synth 8-638] synthesizing module 'RAMB36E1' [C:/Xilinx/Vivado/2015.4/scri
 	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 18 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'RAMB36E1' (14#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:42097]
-WARNING: [Synth 8-350] instance 'kcpsm6_rom' of module 'RAMB36E1' requires 32 connections, but only 26 given [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/proj2demo.v:690]
-INFO: [Synth 8-638] synthesizing module 'jtag_loader_6' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/proj2demo.v:1934]
+INFO: [Synth 8-256] done synthesizing module 'RAMB36E1' (14#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:42097]
+WARNING: [Synth 8-350] instance 'kcpsm6_rom' of module 'RAMB36E1' requires 32 connections, but only 26 given [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/proj2demo.v:690]
+INFO: [Synth 8-638] synthesizing module 'jtag_loader_6' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/proj2demo.v:1934]
 	Parameter C_JTAG_LOADER_ENABLE bound to: 1 - type: integer 
 	Parameter C_FAMILY bound to: 7S - type: string 
 	Parameter C_NUM_PICOBLAZE bound to: 1 - type: integer 
@@ -516,17 +516,17 @@ INFO: [Synth 8-638] synthesizing module 'jtag_loader_6' [D:/Masters/CourseSpring
 	Parameter C_ADDR_WIDTH_5 bound to: 5'b01010 
 	Parameter C_ADDR_WIDTH_6 bound to: 5'b01010 
 	Parameter C_ADDR_WIDTH_7 bound to: 5'b01010 
-INFO: [Synth 8-638] synthesizing module 'BSCANE2' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:422]
+INFO: [Synth 8-638] synthesizing module 'BSCANE2' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:422]
 	Parameter DISABLE_JTAG bound to: FALSE - type: string 
 	Parameter JTAG_CHAIN bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'BSCANE2' (15#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:422]
-INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-256] done synthesizing module 'BUFG' (16#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
-INFO: [Synth 8-256] done synthesizing module 'jtag_loader_6' (17#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/proj2demo.v:1934]
-INFO: [Synth 8-256] done synthesizing module 'proj2demo' (18#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/proj2demo.v:104]
-INFO: [Synth 8-638] synthesizing module 'bot' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/bot.v:33]
-INFO: [Synth 8-638] synthesizing module 'bot_pgm' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/bot_pgm.v:55]
-INFO: [Synth 8-638] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:41431]
+INFO: [Synth 8-256] done synthesizing module 'BSCANE2' (15#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:422]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (16#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'jtag_loader_6' (17#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/proj2demo.v:1934]
+INFO: [Synth 8-256] done synthesizing module 'proj2demo' (18#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/proj2demo.v:104]
+INFO: [Synth 8-638] synthesizing module 'bot' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/bot.v:33]
+INFO: [Synth 8-638] synthesizing module 'bot_pgm' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/bot_pgm.v:55]
+INFO: [Synth 8-638] synthesizing module 'RAMB18E1' [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:41431]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter INITP_00 bound to: 256'b0001011010000110000110000110000110000110000110000110000010100000001010000110000110000110000110000110000110000110000010000110001001010101110100010100101010101010101010101010101000100010000010100000000010000000100000101101110110100010100010101000000000101010 
@@ -626,25 +626,26 @@ INFO: [Synth 8-638] synthesizing module 'RAMB18E1' [C:/Xilinx/Vivado/2015.4/scri
 	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 18 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'RAMB18E1' (19#1) [C:/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:41431]
-INFO: [Synth 8-256] done synthesizing module 'bot_pgm' (20#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/bot_pgm.v:55]
-INFO: [Synth 8-638] synthesizing module 'world_if' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/world_if.v:56]
-INFO: [Synth 8-256] done synthesizing module 'world_if' (21#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/world_if.v:56]
-INFO: [Synth 8-638] synthesizing module 'map' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/map.v:47]
+INFO: [Synth 8-256] done synthesizing module 'RAMB18E1' (19#1) [D:/Window_Programs/Vivado/2015.4/scripts/rt/data/unisim_comp.v:41431]
+INFO: [Synth 8-256] done synthesizing module 'bot_pgm' (20#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/bot_pgm.v:55]
+INFO: [Synth 8-638] synthesizing module 'world_if' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/world_if.v:56]
+INFO: [Synth 8-256] done synthesizing module 'world_if' (21#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/world_if.v:56]
+INFO: [Synth 8-638] synthesizing module 'map' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/map.v:47]
 	Parameter GND bound to: 2'b00 
 	Parameter BLKL bound to: 2'b01 
 	Parameter OBSTR bound to: 2'b10 
 	Parameter RSVD bound to: 2'b00 
-INFO: [Synth 8-638] synthesizing module 'world_map' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/world_map.v:39]
-INFO: [Synth 8-256] done synthesizing module 'world_map' (22#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/world_map.v:39]
-INFO: [Synth 8-256] done synthesizing module 'map' (23#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/map.v:47]
-INFO: [Synth 8-256] done synthesizing module 'bot' (24#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/bot.v:33]
-INFO: [Synth 8-638] synthesizing module 'nexys4_bot_if' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4_bit_if.v:16]
+INFO: [Synth 8-638] synthesizing module 'world_map' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/world_map.v:39]
+INFO: [Synth 8-256] done synthesizing module 'world_map' (22#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/world_map.v:39]
+INFO: [Synth 8-256] done synthesizing module 'map' (23#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/map.v:47]
+INFO: [Synth 8-256] done synthesizing module 'bot' (24#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/bot.v:33]
+INFO: [Synth 8-638] synthesizing module 'nexys4_bot_if' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4_bit_if.v:16]
 	Parameter RESET_POLARITY_LOW bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'nexys4_bot_if' (25#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4_bit_if.v:16]
-WARNING: [Synth 8-3848] Net vid_pixel_out in module/entity Nexys4fpga does not have driver. [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:14]
-WARNING: [Synth 8-3848] Net rdl in module/entity Nexys4fpga does not have driver. [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:56]
-INFO: [Synth 8-256] done synthesizing module 'Nexys4fpga' (26#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:1]
+INFO: [Synth 8-256] done synthesizing module 'nexys4_bot_if' (25#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4_bit_if.v:16]
+WARNING: [Synth 8-689] width (7) of port connection 'db_btns' does not match port width (8) of module 'nexys4_bot_if' [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:214]
+WARNING: [Synth 8-3848] Net vid_pixel_out in module/entity Nexys4fpga does not have driver. [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:14]
+WARNING: [Synth 8-3848] Net rdl in module/entity Nexys4fpga does not have driver. [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:56]
+INFO: [Synth 8-256] done synthesizing module 'Nexys4fpga' (26#1) [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:1]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_pixel_out[1]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_pixel_out[0]
 WARNING: [Synth 8-3917] design Nexys4fpga has port JA[5] driven by constant 0
@@ -674,7 +675,7 @@ WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[2]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[1]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 301.285 ; gain = 129.996
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 301.438 ; gain = 130.348
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -683,28 +684,28 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[9] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[8] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[7] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[6] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[5] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[4] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[3] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[2] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[1] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[0] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[9] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[8] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[7] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[6] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[5] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[4] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[3] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[2] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[1] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
-WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[0] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[9] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[8] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[7] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[6] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[5] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[4] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[3] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[2] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[1] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_row[0] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[9] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[8] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[7] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[6] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[5] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[4] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[3] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[2] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[1] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
+WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[0] to constant 0 [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 301.285 ; gain = 129.996
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 301.438 ; gain = 130.348
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 362 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -713,10 +714,9 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc]
-Finished Parsing XDC File [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Nexys4fpga_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys4fpga_propImpl.xdc].
+Parsing XDC File [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc]
+Finished Parsing XDC File [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys4fpga_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Nexys4fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
@@ -728,22 +728,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 8 instances
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 593.484 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 593.246 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 593.484 ; gain = 422.195
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 593.246 ; gain = 422.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 593.484 ; gain = 422.195
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 593.246 ; gain = 422.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 593.484 ; gain = 422.195
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:42 . Memory (MB): peak = 593.246 ; gain = 422.156
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "db_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "shift_pb0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -798,7 +798,7 @@ INFO: [Synth 8-5546] ROM "dp" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'an_reg' using encoding 'sequential' in module 'sevensegment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 593.484 ; gain = 422.195
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 593.246 ; gain = 422.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -908,7 +908,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 593.484 ; gain = 422.195
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:31 ; elapsed = 00:00:44 . Memory (MB): peak = 593.246 ; gain = 422.156
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -961,9 +961,9 @@ WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[2]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[1]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 593.484 ; gain = 422.195
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 593.246 ; gain = 422.156
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 593.484 ; gain = 422.195
+Finished Parallel Reinference  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 593.246 ; gain = 422.156
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1000,9 +1000,9 @@ WARNING: [Synth 8-3332] Sequential element (\PRJ_Demo/instantiate_loader.jtag_lo
 WARNING: [Synth 8-3332] Sequential element (\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[0] ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\DB/pbtn_db_reg[5] ) is unused and will be removed from module Nexys4fpga.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 593.484 ; gain = 422.195
+Finished Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 593.246 ; gain = 422.156
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 593.484 ; gain = 422.195
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 593.246 ; gain = 422.156
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1016,10 +1016,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 593.484 ; gain = 422.195
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 593.246 ; gain = 422.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 593.484 ; gain = 422.195
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 593.246 ; gain = 422.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1045,16 +1045,16 @@ WARNING: [Synth 8-3332] Sequential element (\ROJO/MAP/vid_addr_reg[2] ) is unuse
 WARNING: [Synth 8-3332] Sequential element (\ROJO/MAP/vid_addr_reg[1] ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\ROJO/MAP/vid_addr_reg[0] ) is unused and will be removed from module Nexys4fpga.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 602.090 ; gain = 430.801
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:12 . Memory (MB): peak = 601.484 ; gain = 430.395
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 602.090 ; gain = 430.801
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:56 ; elapsed = 00:01:12 . Memory (MB): peak = 601.484 ; gain = 430.395
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 602.090 ; gain = 430.801
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:56 ; elapsed = 00:01:12 . Memory (MB): peak = 601.484 ; gain = 430.395
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -1071,7 +1071,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 601.484 ; gain = 430.395
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1084,7 +1084,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 601.484 ; gain = 430.395
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1096,25 +1096,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 601.484 ; gain = 430.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 601.484 ; gain = 430.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 601.484 ; gain = 430.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 601.484 ; gain = 430.395
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1183,15 +1183,26 @@ Report Instance Areas:
 |20    |    Digit7                                  |Digit_6       |    23|
 +------+--------------------------------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 601.484 ; gain = 430.395
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 60 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 602.090 ; gain = 119.742
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 601.484 ; gain = 119.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:13 . Memory (MB): peak = 601.484 ; gain = 430.395
 INFO: [Project 1-571] Translating synthesized netlist
-Reading core file 'D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/world_map_part1/world_map.ngc' for (cell view 'world_map', library 'work')
-Parsing EDIF File [./.ngc2edfcache/world_map_ngc_45c762b8.edif]
-Finished Parsing EDIF File [./.ngc2edfcache/world_map_ngc_45c762b8.edif]
+Release 14.7 - ngc2edif P_INT.20151103 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design world_map.ngc ...
+WARNING:NetListWriters:298 - No output is written to world_map.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file world_map.edif ...
+ngc2edif: Total memory usage is 85176 kilobytes
+
+Reading core file 'D:/Documents/PSU/ECE540/Proj2/pro2_deb/Project2/project_2/project_2.srcs/sources_1/imports/world_map_part1/world_map.ngc' for (cell view 'world_map', library 'work')
+Parsing EDIF File [./.ngc2edfcache/world_map_ngc_8fb478c9.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/world_map_ngc_8fb478c9.edif]
 INFO: [Netlist 29-17] Analyzing 393 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20151103
@@ -1209,6 +1220,6 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 277 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 602.090 ; gain = 414.949
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 602.090 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 23 16:51:27 2016...
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:17 . Memory (MB): peak = 601.484 ; gain = 413.547
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.173 . Memory (MB): peak = 601.484 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 23 17:22:07 2016...
