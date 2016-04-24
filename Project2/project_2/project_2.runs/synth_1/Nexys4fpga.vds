@@ -2,8 +2,8 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Sat Apr 23 16:07:39 2016
-# Process ID: 10436
+# Start of session at: Sat Apr 23 16:50:52 2016
+# Process ID: 4616
 # Current directory: D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.runs/synth_1
 # Command line: vivado.exe -log Nexys4fpga.vds -mode batch -messageDb vivado.pb -notrace -source Nexys4fpga.tcl
 # Log file: D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.runs/synth_1/Nexys4fpga.vds
@@ -16,7 +16,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 WARNING: [Synth 8-2507] parameter declaration becomes local in debounce with formal parameter declaration list [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/debounce.v:46]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 274.582 ; gain = 103.672
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 274.285 ; gain = 102.996
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Nexys4fpga' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:1]
 	Parameter SIMULATE bound to: 0 - type: integer 
@@ -54,7 +54,7 @@ INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [D:/Masters/Course
 INFO: [Synth 8-638] synthesizing module 'sevensegment' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/sevensegment.v:35]
 	Parameter CLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
 	Parameter REFRESH_FREQUENCY_HZ bound to: 500 - type: integer 
-	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
+	Parameter RESET_POLARITY_LOW bound to: 0 - type: integer 
 	Parameter CNTR_WIDTH bound to: 32 - type: integer 
 	Parameter SIMULATE bound to: 0 - type: integer 
 	Parameter SIMULATE_FREQUENCY_CNT bound to: 5 - type: integer 
@@ -641,105 +641,9 @@ INFO: [Synth 8-256] done synthesizing module 'world_map' (22#1) [D:/Masters/Cour
 INFO: [Synth 8-256] done synthesizing module 'map' (23#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/map.v:47]
 INFO: [Synth 8-256] done synthesizing module 'bot' (24#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/bot.v:33]
 INFO: [Synth 8-638] synthesizing module 'nexys4_bot_if' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4_bit_if.v:16]
-	Parameter RESET_POLARITY_LOW bound to: 1 - type: integer 
+	Parameter RESET_POLARITY_LOW bound to: 0 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'nexys4_bot_if' (25#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4_bit_if.v:16]
 WARNING: [Synth 8-3848] Net vid_pixel_out in module/entity Nexys4fpga does not have driver. [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:14]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d1[0] with 1st driver pin 'Nexys4fpga:/N4IF/dig1[0]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d1[0] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d1[0] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d1[1] with 1st driver pin 'Nexys4fpga:/N4IF/dig1[1]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d1[1] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d1[1] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d1[2] with 1st driver pin 'Nexys4fpga:/N4IF/dig1[2]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d1[2] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d1[2] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d1[3] with 1st driver pin 'Nexys4fpga:/N4IF/dig1[3]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d1[3] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d1[3] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d1[4] with 1st driver pin 'Nexys4fpga:/N4IF/dig1[4]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d1[4] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d1[4] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d2[0] with 1st driver pin 'Nexys4fpga:/N4IF/dig2[0]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d2[0] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d2[0] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d2[1] with 1st driver pin 'Nexys4fpga:/N4IF/dig2[1]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d2[1] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d2[1] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d2[2] with 1st driver pin 'Nexys4fpga:/N4IF/dig2[2]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d2[2] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d2[2] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d2[3] with 1st driver pin 'Nexys4fpga:/N4IF/dig2[3]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d2[3] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d2[3] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d2[4] with 1st driver pin 'Nexys4fpga:/N4IF/dig2[4]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d2[4] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d2[4] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d3[0] with 1st driver pin 'Nexys4fpga:/N4IF/dig3[0]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d3[0] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d3[0] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d3[1] with 1st driver pin 'Nexys4fpga:/N4IF/dig3[1]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d3[1] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d3[1] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d3[2] with 1st driver pin 'Nexys4fpga:/N4IF/dig3[2]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d3[2] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d3[2] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d3[3] with 1st driver pin 'Nexys4fpga:/N4IF/dig3[3]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d3[3] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d3[3] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d3[4] with 1st driver pin 'Nexys4fpga:/N4IF/dig3[4]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d3[4] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d3[4] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d4[0] with 1st driver pin 'Nexys4fpga:/N4IF/dig4[0]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d4[0] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d4[0] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d4[1] with 1st driver pin 'Nexys4fpga:/N4IF/dig4[1]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d4[1] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d4[1] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d4[2] with 1st driver pin 'Nexys4fpga:/N4IF/dig4[2]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d4[2] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d4[2] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d4[3] with 1st driver pin 'Nexys4fpga:/N4IF/dig4[3]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d4[3] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d4[3] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d4[4] with 1st driver pin 'Nexys4fpga:/N4IF/dig4[4]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d4[4] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d4[4] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d5[0] with 1st driver pin 'Nexys4fpga:/N4IF/dig5[0]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d5[0] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d5[0] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d5[1] with 1st driver pin 'Nexys4fpga:/N4IF/dig5[1]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d5[1] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d5[1] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d5[2] with 1st driver pin 'Nexys4fpga:/N4IF/dig5[2]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d5[2] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d5[2] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d5[3] with 1st driver pin 'Nexys4fpga:/N4IF/dig5[3]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d5[3] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d5[3] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d5[4] with 1st driver pin 'Nexys4fpga:/N4IF/dig5[4]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d5[4] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d5[4] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d6[0] with 1st driver pin 'Nexys4fpga:/N4IF/dig6[0]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d6[0] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d6[0] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d6[1] with 1st driver pin 'Nexys4fpga:/N4IF/dig6[1]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d6[1] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d6[1] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d6[2] with 1st driver pin 'Nexys4fpga:/N4IF/dig6[2]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d6[2] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d6[2] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d6[3] with 1st driver pin 'Nexys4fpga:/N4IF/dig6[3]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d6[3] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d6[3] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d6[4] with 1st driver pin 'Nexys4fpga:/N4IF/dig6[4]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d6[4] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d6[4] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d7[0] with 1st driver pin 'Nexys4fpga:/N4IF/dig7[0]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d7[0] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d7[0] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d7[1] with 1st driver pin 'Nexys4fpga:/N4IF/dig7[1]' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net d7[1] with 2nd driver pin 'VCC' [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net d7[1] is connected to constant driver, other driver is ignored [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:116]
 WARNING: [Synth 8-3848] Net rdl in module/entity Nexys4fpga does not have driver. [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:56]
 INFO: [Synth 8-256] done synthesizing module 'Nexys4fpga' (26#1) [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:1]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_pixel_out[1]
@@ -771,7 +675,7 @@ WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[2]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[1]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 300.547 ; gain = 129.637
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 301.285 ; gain = 129.996
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -801,7 +705,7 @@ WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[2] to constant 0 [D:/Mas
 WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[1] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
 WARNING: [Synth 8-3295] tying undriven pin ROJO:vid_col[0] to constant 0 [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/hdl_part1/nexys4fpga.v:175]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 300.547 ; gain = 129.637
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 301.285 ; gain = 129.996
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 362 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -812,6 +716,7 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc]
 Finished Parsing XDC File [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Nexys4fpga_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys4fpga_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Nexys4fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
@@ -824,22 +729,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 8 instances
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 593.789 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 593.484 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 593.789 ; gain = 422.879
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 593.484 ; gain = 422.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 593.789 ; gain = 422.879
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 593.484 ; gain = 422.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 593.789 ; gain = 422.879
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 593.484 ; gain = 422.195
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "db_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "shift_pb0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -894,7 +799,7 @@ INFO: [Synth 8-5546] ROM "dp" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'an_reg' using encoding 'sequential' in module 'sevensegment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 593.789 ; gain = 422.879
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 593.484 ; gain = 422.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1004,7 +909,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 593.789 ; gain = 422.879
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 593.484 ; gain = 422.195
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -1057,9 +962,9 @@ WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[2]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[1]
 WARNING: [Synth 8-3331] design Nexys4fpga has unconnected port vid_col[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 593.789 ; gain = 422.879
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 593.484 ; gain = 422.195
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 593.789 ; gain = 422.879
+Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 593.484 ; gain = 422.195
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1077,104 +982,6 @@ INFO: [Synth 8-3886] merging instance '\PRJ_Demo/instantiate_loader.jtag_loader_
 INFO: [Synth 8-3886] merging instance '\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[1] ' (FDR) to '\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[3] '
 INFO: [Synth 8-3886] merging instance '\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[2] ' (FDR) to '\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[5] '
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[5] )
-INFO: [Synth 8-3886] merging instance '\SSB/Digit7/seg_reg[0] ' (FD) to '\SSB/Digit7/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit6/seg_reg[0] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit5/seg_reg[0] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit4/seg_reg[0] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit3/seg_reg[0] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit2/seg_reg[0] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit1/seg_reg[0] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit7/seg_reg[1] ' (FD) to '\SSB/Digit7/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit6/seg_reg[1] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit5/seg_reg[1] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit4/seg_reg[1] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit3/seg_reg[1] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit2/seg_reg[1] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit1/seg_reg[1] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit7/seg_reg[2] ' (FD) to '\SSB/Digit7/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit6/seg_reg[2] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit5/seg_reg[2] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit4/seg_reg[2] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit3/seg_reg[2] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit2/seg_reg[2] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit1/seg_reg[2] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit7/seg_reg[3] ' (FD) to '\SSB/Digit7/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit6/seg_reg[3] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit5/seg_reg[3] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit4/seg_reg[3] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit3/seg_reg[3] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit2/seg_reg[3] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit1/seg_reg[3] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit7/seg_reg[4] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit6/seg_reg[4] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit5/seg_reg[4] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit4/seg_reg[4] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit3/seg_reg[4] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit2/seg_reg[4] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit1/seg_reg[4] ' (FD) to '\SSB/Digit7/seg_reg[5] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit7/seg_reg[5] ' (FD) to '\SSB/Digit5/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit6/seg_reg[5] ' (FD) to '\SSB/Digit5/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit5/seg_reg[5] ' (FD) to '\SSB/Digit5/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit4/seg_reg[5] ' (FD) to '\SSB/Digit5/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit3/seg_reg[5] ' (FD) to '\SSB/Digit5/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit2/seg_reg[5] ' (FD) to '\SSB/Digit5/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit1/seg_reg[5] ' (FD) to '\SSB/Digit5/seg_reg[6] '
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SSB/Digit7/seg_reg[6] )
-INFO: [Synth 8-3886] merging instance '\SSB/Digit6/seg_reg[6] ' (FD) to '\SSB/Digit5/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit5/seg_reg[6] ' (FD) to '\SSB/Digit3/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit4/seg_reg[6] ' (FD) to '\SSB/Digit3/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit3/seg_reg[6] ' (FD) to '\SSB/Digit1/seg_reg[6] '
-INFO: [Synth 8-3886] merging instance '\SSB/Digit2/seg_reg[6] ' (FD) to '\SSB/Digit1/seg_reg[6] '
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SSB/Digit1/seg_reg[6] )
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit7/seg_reg[6] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit7/seg_reg[3] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit7/seg_reg[2] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit7/seg_reg[1] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit7/seg_reg[0] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit7/seg_reg[5] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit6/seg_reg[0] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit5/seg_reg[0] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit4/seg_reg[0] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit3/seg_reg[0] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit2/seg_reg[0] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit1/seg_reg[0] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit6/seg_reg[1] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit5/seg_reg[1] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit4/seg_reg[1] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit3/seg_reg[1] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit2/seg_reg[1] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit1/seg_reg[1] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit6/seg_reg[2] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit5/seg_reg[2] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit4/seg_reg[2] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit3/seg_reg[2] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit2/seg_reg[2] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit1/seg_reg[2] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit6/seg_reg[3] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit5/seg_reg[3] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit4/seg_reg[3] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit3/seg_reg[3] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit2/seg_reg[3] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit1/seg_reg[3] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit7/seg_reg[4] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit6/seg_reg[4] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit5/seg_reg[4] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit4/seg_reg[4] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit3/seg_reg[4] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit2/seg_reg[4] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit1/seg_reg[4] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit5/seg_reg[6] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit6/seg_reg[5] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit5/seg_reg[5] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit4/seg_reg[5] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit3/seg_reg[5] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit2/seg_reg[5] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit1/seg_reg[5] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit6/seg_reg[6] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit3/seg_reg[6] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit4/seg_reg[6] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit1/seg_reg[6] ) is unused and will be removed from module Nexys4fpga.
-WARNING: [Synth 8-3332] Sequential element (\SSB/Digit2/seg_reg[6] ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\APPCPU/sync_sleep_flop ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\APPCPU/k_write_strobe_flop ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\APPCPU/read_strobe_flop ) is unused and will be removed from module Nexys4fpga.
@@ -1183,15 +990,20 @@ WARNING: [Synth 8-3332] Sequential element (\ROJO/BOTSIMCPU/sync_interrupt_flop 
 WARNING: [Synth 8-3332] Sequential element (\ROJO/BOTSIMCPU/interrupt_ack_flop ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\ROJO/BOTSIMCPU/k_write_strobe_flop ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\ROJO/BOTSIMCPU/read_strobe_flop ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb5_reg[3] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb5_reg[2] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb5_reg[1] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/shift_pb5_reg[0] ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[6] ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[5] ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[2] ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[1] ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\PRJ_Demo/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int_reg[0] ) is unused and will be removed from module Nexys4fpga.
+WARNING: [Synth 8-3332] Sequential element (\DB/pbtn_db_reg[5] ) is unused and will be removed from module Nexys4fpga.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 593.789 ; gain = 422.879
+Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 593.484 ; gain = 422.195
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 593.789 ; gain = 422.879
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 593.484 ; gain = 422.195
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -1205,10 +1017,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 593.789 ; gain = 422.879
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 593.484 ; gain = 422.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 593.789 ; gain = 422.879
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 593.484 ; gain = 422.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1234,16 +1046,16 @@ WARNING: [Synth 8-3332] Sequential element (\ROJO/MAP/vid_addr_reg[2] ) is unuse
 WARNING: [Synth 8-3332] Sequential element (\ROJO/MAP/vid_addr_reg[1] ) is unused and will be removed from module Nexys4fpga.
 WARNING: [Synth 8-3332] Sequential element (\ROJO/MAP/vid_addr_reg[0] ) is unused and will be removed from module Nexys4fpga.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 598.855 ; gain = 427.945
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 602.090 ; gain = 430.801
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 598.855 ; gain = 427.945
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 602.090 ; gain = 430.801
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 598.855 ; gain = 427.945
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 602.090 ; gain = 430.801
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -1260,7 +1072,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 598.855 ; gain = 427.945
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1273,7 +1085,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 598.855 ; gain = 427.945
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1285,25 +1097,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 598.855 ; gain = 427.945
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 598.855 ; gain = 427.945
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 598.855 ; gain = 427.945
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 598.855 ; gain = 427.945
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1326,13 +1138,13 @@ Report Cell Usage:
 |4     |CARRY4    |    16|
 |5     |LUT1      |    73|
 |6     |LUT2      |    17|
-|7     |LUT3      |    21|
-|8     |LUT4      |    24|
-|9     |LUT5      |   130|
-|10    |LUT6      |    98|
+|7     |LUT3      |    15|
+|8     |LUT4      |    15|
+|9     |LUT5      |   182|
+|10    |LUT6      |   116|
 |11    |LUT6_2    |   100|
 |12    |MUXCY     |    58|
-|13    |MUXF7     |     1|
+|13    |MUXF7     |     8|
 |14    |RAM32M    |     8|
 |15    |RAM64M    |     4|
 |16    |RAMB18E1  |     1|
@@ -1340,8 +1152,8 @@ Report Cell Usage:
 |18    |XORCY     |    54|
 |19    |FD        |    92|
 |20    |FDR       |    36|
-|21    |FDRE      |   447|
-|22    |IBUF      |    23|
+|21    |FDRE      |   526|
+|22    |IBUF      |    22|
 |23    |OBUF      |    40|
 |24    |OBUFT     |     2|
 +------+----------+------+
@@ -1350,38 +1162,38 @@ Report Instance Areas:
 +------+--------------------------------------------+--------------+------+
 |      |Instance                                    |Module        |Cells |
 +------+--------------------------------------------+--------------+------+
-|1     |top                                         |              |  1253|
-|2     |  APPCPU                                    |kcpsm6        |   251|
-|3     |  DB                                        |debounce      |   224|
-|4     |  N4IF                                      |nexys4_bot_if |    55|
+|1     |top                                         |              |  1393|
+|2     |  APPCPU                                    |kcpsm6        |   257|
+|3     |  DB                                        |debounce      |   216|
+|4     |  N4IF                                      |nexys4_bot_if |    90|
 |5     |  PRJ_Demo                                  |proj2demo     |    65|
 |6     |    \instantiate_loader.jtag_loader_6_inst  |jtag_loader_6 |    64|
-|7     |  ROJO                                      |bot           |   422|
-|8     |    BOTSIMCPU                               |kcpsm6_7      |   248|
+|7     |  ROJO                                      |bot           |   419|
+|8     |    BOTSIMCPU                               |kcpsm6_7      |   245|
 |9     |    BOTSIMPGM                               |bot_pgm       |     1|
 |10    |    MAP                                     |map           |    18|
 |11    |    WRLDIF                                  |world_if      |   155|
-|12    |  SSB                                       |sevensegment  |   170|
-|13    |    Digit0                                  |Digit         |    22|
-|14    |    Digit1                                  |Digit_0       |     1|
-|15    |    Digit2                                  |Digit_1       |     1|
-|16    |    Digit3                                  |Digit_2       |     3|
-|17    |    Digit4                                  |Digit_3       |     1|
-|18    |    Digit5                                  |Digit_4       |     1|
-|19    |    Digit6                                  |Digit_5       |     1|
-|20    |    Digit7                                  |Digit_6       |     2|
+|12    |  SSB                                       |sevensegment  |   281|
+|13    |    Digit0                                  |Digit         |    15|
+|14    |    Digit1                                  |Digit_0       |    15|
+|15    |    Digit2                                  |Digit_1       |    15|
+|16    |    Digit3                                  |Digit_2       |    31|
+|17    |    Digit4                                  |Digit_3       |    15|
+|18    |    Digit5                                  |Digit_4       |    15|
+|19    |    Digit6                                  |Digit_5       |    15|
+|20    |    Digit7                                  |Digit_6       |    23|
 +------+--------------------------------------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 598.855 ; gain = 427.945
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 104 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 598.855 ; gain = 115.852
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 598.855 ; gain = 427.945
+Synthesis finished with 0 errors, 0 critical warnings and 60 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 602.090 ; gain = 119.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 602.090 ; gain = 430.801
 INFO: [Project 1-571] Translating synthesized netlist
 Reading core file 'D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.srcs/sources_1/imports/world_map_part1/world_map.ngc' for (cell view 'world_map', library 'work')
 Parsing EDIF File [./.ngc2edfcache/world_map_ngc_45c762b8.edif]
 Finished Parsing EDIF File [./.ngc2edfcache/world_map_ngc_45c762b8.edif]
-INFO: [Netlist 29-17] Analyzing 394 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 393 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20151103
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -1396,8 +1208,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-326 Infos, 156 Warnings, 96 Critical Warnings and 0 Errors encountered.
+277 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 598.855 ; gain = 411.094
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 598.855 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 23 16:08:15 2016...
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 602.090 ; gain = 414.949
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 602.090 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 23 16:51:27 2016...

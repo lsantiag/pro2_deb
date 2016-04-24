@@ -2,8 +2,8 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Sat Apr 23 16:08:21 2016
-# Process ID: 7324
+# Start of session at: Sat Apr 23 16:51:34 2016
+# Process ID: 9140
 # Current directory: D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.runs/impl_1
 # Command line: vivado.exe -log Nexys4fpga.vdi -applog -messageDb vivado.pb -mode batch -source Nexys4fpga.tcl -notrace
 # Log file: D:/Masters/CourseSpring16/SOC/Projects/Project2/project_2/project_2.runs/impl_1/Nexys4fpga.vdi

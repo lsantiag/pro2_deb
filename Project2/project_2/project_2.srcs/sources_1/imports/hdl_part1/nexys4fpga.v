@@ -1,4 +1,3 @@
-// Luis Santiago
 module Nexys4fpga ( 
  
 input           clk,        // 100MHz clock from on-board oscillator  
@@ -112,7 +111,7 @@ debounce    #(
                 
 // instantiate the 7-segment, 8-digit display  
 sevensegment #(   
-                .RESET_POLARITY_LOW(1), 
+                .RESET_POLARITY_LOW(0), 
                 .SIMULATE(SIMULATE)  ) 
          SSB    (   // inputs for control signals   
                  .d0(dig0),   
@@ -191,7 +190,7 @@ bot ROJO(
 // instantiate the PicoBlaze I/O register interface  
   
 nexys4_bot_if #(
-                .RESET_POLARITY_LOW(1)
+                .RESET_POLARITY_LOW(0)
                 )  
     N4IF(
             .write_strobe(write_strobe),   
@@ -212,7 +211,7 @@ nexys4_bot_if #(
             .MotCtl(motctl),
             
             .db_sw(db_sw),
-            .db_btns(db_btns),
+            .db_btns({3'b000,db_btns[4:1],1'b0}),
             .dig7(dig7),
             .dig6(dig6), 
             .dig5(dig5),

@@ -40,7 +40,7 @@ parameter integer RESET_POLARITY_LOW = 1
 
   //IO definition with debounce module
   input      [15:0]  db_sw,                     // slider switches
-  input       [5:0]  db_btns,                   // pushbutton inputs - including CPU RESET button
+  input       [7:0]  db_btns,                   // pushbutton inputs - including CPU RESET button
 
   //IO definition with 7-segment display
   output  reg  [4:0] dig7,dig6,
@@ -90,7 +90,7 @@ parameter integer RESET_POLARITY_LOW = 1
                     io_dataOut<=db_sw[7:0];
                 // Read the status of debounce buttons
                 8'h00:
-                    io_dataOut<={3'b000,db_btns};
+                    io_dataOut <= db_btns;
                 default:
                     io_dataOut<=8'bxxxxxxxx;
             endcase
