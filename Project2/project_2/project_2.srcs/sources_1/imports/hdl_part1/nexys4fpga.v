@@ -50,7 +50,7 @@ wire        k_write_strobe;
 wire        read_strobe; 
 wire        interrupt;  
 wire        interrupt_ack;  
-wire        kcpsm6_sleep;  
+wire        sleep;          //kcpsm6_sleep;  
 wire        kcpsm6_reset;  
 wire        cpu_reset;  
 wire        rdl;  
@@ -211,7 +211,7 @@ nexys4_bot_if #(
             .MotCtl(motctl),
             
             .db_sw(db_sw),
-            .db_btns({4'b0000,db_btns[4:1]}),
+            .db_btns({3'b000,db_btns[4:1]}),
             .dig7(dig7),
             .dig6(dig6), 
             .dig5(dig5),
