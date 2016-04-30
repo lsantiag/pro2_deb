@@ -87,6 +87,7 @@ assign  sysclk      =   clk;
 assign  sysreset    =   ~db_btns[0]; // btnCpuReset is asserted low so invert it  
 assign  sw_high     =   db_sw[15:8];  
 assign  sw_low      =   db_sw[7:0]; 
+
 //assign  led         =   {leds_high, leds_low};  
 assign  dp          =   segs_int[7];  
 assign  seg          =   segs_int[6:0];

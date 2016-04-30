@@ -14,8 +14,40 @@
 ///////////////////////////////////////////////////////////////////
 */
 module nexys4_bot_if#(
-parameter integer RESET_POLARITY_LOW = 1
-)
+    /*==============================================================*/
+    //                 PARAMTER DECLARATION                         //
+    /*==============================================================*/
+    parameter integer RESET_POLARITY_LOW = 1,
+    
+    //Parameters PORT Constants
+    parameter   PA_PBTNS                 = 8'h00,
+    parameter   PA_SLSWTCH               = 8'h01,
+    parameter   PA_LEDS                  = 8'h02,
+    parameter   PA_DIG3                  = 8'h03,
+    parameter   PA_DIG2                  = 8'h04,
+    parameter   PA_DIG1                  = 8'h05,
+    parameter   PA_DIG0                  = 8'h06,
+    parameter   PA_DP                    = 8'h07,
+    parameter   PA_MOTCTL_IN             = 8'h09,   
+    
+    parameter   PA_LOCX             	 = 8'h0A,
+    parameter   PA_LOCY		             = 8'h0B,
+    parameter   PA_BOTINFO		         = 8'h0C,    
+    parameter   PA_SENSORS      		 = 8'h0D,
+    parameter   PA_LMDIST            	 = 8'h0E,
+    parameter   PA_RMDIST   		     = 8'h0F,
+    parameter   PA_SLSWTCH1508           = 8'h11,
+    
+    parameter   PA_LEDS1508         	 = 8'h12,
+    parameter   PA_DIG7 		         = 8'h13,
+    parameter   PA_DIG6         		 = 8'h14,
+    parameter   PA_DIG5     		     = 8'h15,
+    parameter   PA_DIG4     		     = 8'h16,
+    parameter   PA_DP0704		         = 8'h17
+    
+    
+    
+)    
 (
   //IO definition for BOT interface
   input        [7:0] LocX_reg,                   // X-coordinate of rojobot's location
@@ -68,28 +100,28 @@ parameter integer RESET_POLARITY_LOW = 1
             io_dataOut<=8'h0;
     else begin
             case (port_id)
-                //Read the
-                8'h0A:
+                //Read the input ports
+                PA_LOCX:
                     io_dataOut<=LocX_reg;
-                8'h0B:
+                PA_LOCY:
                     io_dataOut<=LocY_reg;
-                8'h0C:
+                PA_BOTINFO:
                     io_dataOut<=BotInfo_reg;
-                8'h0D:
+                PA_SENSORS:
                     io_dataOut<=Sensors_reg;
-                8'h0E:
+                PA_LMDIST:
                     io_dataOut<=LMDist_reg;
-                8'h0F:
+                PA_RMDIST:
                     io_dataOut<=RMDist_reg;
 
                 //Read the higher switch status
-                8'h11:
+                PA_SLSWTCH1508:
                     io_dataOut<=db_sw[15:8];
                 //Read the lower switch status
-                8'h01:
+                PA_SLSWTCH:
                     io_dataOut<=db_sw[7:0];
                 // Read the status of debounce buttons
-                8'h00:
+                PA_PBTNS:
                     io_dataOut <= db_btns;
                 default:
                     io_dataOut<=8'bxxxxxxxx;
@@ -117,31 +149,31 @@ parameter integer RESET_POLARITY_LOW = 1
     else begin
         if(write_strobe == 1'b1) begin      //Validating the write signal
             case (port_id)
-                8'h02:
+                PA_LEDS:
                     led[7:0] <= io_dataIn;
-                8'h12:
+                PA_LEDS1508:
                     led[15:8] <= io_dataIn;
-                8'h13:
+                PA_DIG7:
                     dig7 <= io_dataIn;
-                8'h14:
+                PA_DIG6:
                     dig6 <= io_dataIn;
-                8'h15:
+                PA_DIG5:
                     dig5 <= io_dataIn;
-                8'h16:
+                PA_DIG4:
                     dig4 <= io_dataIn;
-                8'h17:
+                PA_DP0704:
                     dp[7:4] <= io_dataIn[7:4];
-                8'h03:
+                PA_DIG3:
                     dig3 <= io_dataIn;
-                8'h04:
+                PA_DIG2:
                     dig2 <= io_dataIn;
-                8'h05:
+                PA_DIG1:
                     dig1 <= io_dataIn;
-                8'h06:
+                PA_DIG0:
                     dig0 <= io_dataIn;
-                8'h07:
+                PA_DP:
                     dp[3:0] <= io_dataIn[3:0];
-                8'h09:
+                PA_MOTCTL_IN:
                     MotCtl <= io_dataIn;
                 default:
                     begin
