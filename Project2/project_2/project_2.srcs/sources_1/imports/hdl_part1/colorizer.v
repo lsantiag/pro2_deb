@@ -39,23 +39,23 @@ module colorizer#(
         input                    video_on,               //Video ON signal from the DTG Module
         
         input           [1:0]    world_pixel,            //World pixel from BOT world
-                                 icon,                   //ICON pixel from the ICON module
+                                 //icon,                   //ICON pixel from the ICON module
         
         //Declaring the Output
-        output  reg     [11:0]   Screen_Color            //Output from Colorizer
+        output          [11:0]   Screen_Color            //Output from Colorizer
 );
     
     always @( posedge clk) begin
         if(reset | ~video_on)                           //Validating for synchronous reset or video_on signal OFF
                 Screen_Color <=     RGB_BLACK;
-        else
-            case(world_pixel)                          //
-                WORLD_BACKGROUND  : Screen_Color  <=    RGB_WHITE;
-                WORLD_BLACKLINE   : Screen_Color  <=    RGB_BLACK;
-                WORLD_OBSTRUCTION : Screen_Color  <=    RGB_BLUE;
-                WORLD_RESERVED    : Screen_Color  <=    RGB_BLACK;
-                default           : Screen_Color  <=    RGB_RED;
-                
+        else 
+            case(world_pixel)                          
+                WORLD_BACKGROUND  : Screen_Color  =    RGB_WHITE;
+                WORLD_BLACKLINE   : Screen_Color  =    RGB_BLACK;
+                WORLD_OBSTRUCTION : Screen_Color  =    RGB_BLUE;
+                WORLD_RESERVED    : Screen_Color  =    RGB_BLACK;
+                default           : Screen_Color  =    RGB_RED;
+            endcase        
     end //always
 endmodule
 

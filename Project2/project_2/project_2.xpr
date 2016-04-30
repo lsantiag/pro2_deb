@@ -44,15 +44,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/hdl_part1/bot_pgm.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/bot_pgm.v"/>
-          <Attr Name="ImportTime" Val="1413048571"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl_part1/world_if.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/world_if.v"/>
@@ -80,10 +71,17 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/hdl_part1/nexys4_bit_if.v">
+      <File Path="$PSRCDIR/sources_1/imports/hdl_part1/bot_pgm.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/nexys4_bit_if.v"/>
-          <Attr Name="ImportTime" Val="1461446875"/>
+          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/bot_pgm.v"/>
+          <Attr Name="ImportTime" Val="1413048571"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/hdl_part1/colorizer.v">
+        <FileInfo RelPath="colorizer.v">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -98,10 +96,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/hdl_part1/sevensegment.v">
+      <File Path="$PSRCDIR/sources_1/imports/hdl_part1/nexys4_bit_if.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/sevensegment.v"/>
-          <Attr Name="ImportTime" Val="1459832656"/>
+          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/nexys4_bit_if.v"/>
+          <Attr Name="ImportTime" Val="1461446875"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -120,6 +118,29 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/bot.v"/>
           <Attr Name="ImportTime" Val="1461094326"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/hdl_part1/sevensegment.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/sevensegment.v"/>
+          <Attr Name="ImportTime" Val="1459832656"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/hdl_part1/clk_wiz_0_clk_wiz.v">
+        <FileInfo RelPath="clk_wiz_0_clk_wiz.v">
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/hdl_part1/dtg.v">
+        <FileInfo RelPath="dtg.v">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -172,6 +193,19 @@
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
+    <FileSet Name="clk_wiz_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_wiz_0">
+      <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="clk_wiz_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -205,6 +239,13 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
+    <Run Id="clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="clk_wiz_0" Part="xc7a100tcsg324-1" ConstrsSet="clk_wiz_0" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/clk_wiz_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
@@ -219,6 +260,20 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="clk_wiz_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="clk_wiz_0" Description="Vivado Implementation Defaults" SynthRun="clk_wiz_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
     </Run>
   </Runs>
 </Project>

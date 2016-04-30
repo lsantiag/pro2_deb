@@ -1,22 +1,44 @@
+/*
+///////////////////////////////////////////////////////////////////
+//	nexys4fpga.v 
+//	Created By:			ROY Kravitz
+//	Last Modified:		23-April-2016 
+//	
+//	Revision History:
+//	-----------------
+//	April		YS,LS		Modified this module
+//	
+//	Description
+//	-----------
+//  The Top Module for RojoBot
+///////////////////////////////////////////////////////////////////
+*/
 module Nexys4fpga ( 
  
-input           clk,        // 100MHz clock from on-board oscillator  
-input           btnL, btnR, // pushbutton inputs - left 
-                            //(db_btns[4])and right (db_btns[2])  
-input           btnU, btnD, // pushbutton inputs - up (db_btns[3])            
-                            // and down (db_btns[1])  
-input           btnC,       // pushbutton inputs - center button ->            
-                            // db_btns[5]  
-input           btnCpuReset,// red pushbutton input -> db_btns[0] 
-input 	[9:0]   vid_row,    // video logic row address
-                vid_col,    // video logic column address
-input   [15:0]  sw,         // switch inputs
-output  [1:0]   vid_pixel_out,  // pixel (location) value    
-output  [15:0]  led,        // LED outputs   
-output  [6:0]   seg,        // Seven segment display cathode pins  
-output          dp,  
-output  [7:0]   an,         // Seven segment display anode pins     
-output  [7:0]   JA          // JA Header 
+input                   clk,                        // 100MHz clock from on-board oscillator  
+
+
+input                   btnL, btnR,                     // pushbutton inputs - left (db_btns[4])and right (db_btns[2])  
+input                   btnU, btnD,                     // pushbutton inputs - up (db_btns[3]) and down (db_btns[1])           
+input                   btnC,                           // pushbutton inputs - center button ->  db_btns[5]          
+input                   btnCpuReset,                    // red pushbutton input -> db_btns[0] 
+
+input       [15:0]      sw,                             // switch inputs
+
+input 	    [9:0]       vid_row,                        // video logic row address
+                        vid_col,                        // video logic column address
+
+output      [1:0]       vid_pixel_out,                  // pixel (location) value    
+output      [15:0]      led,                            // LED outputs   
+output      [6:0]       seg,                            // Seven segment display cathode pins  
+output                  dp,  
+output      [7:0]       an,                             // Seven segment display anode pins     
+output      [7:0]       JA,                              // JA Header 
+
+//OUTPUT for VGA
+ouput                    vert_sync, horiz_sync,
+ouput        [3:0]       vga_red, vga_green, vga_blue
+
 );
 
 
@@ -24,19 +46,27 @@ output  [7:0]   JA          // JA Header
 
 // parameter  
 parameter SIMULATE = 0;  
- // internal variables  
-wire  [15:0]    db_sw;          // debounced switches 
-wire  [5:0]     db_btns;        // debounced buttons
-wire            sysclk;         // 100MHz clock from on-board 
+
+// internal variables  
+wire  [15:0]     db_sw;                         // debounced switches 
+wire  [5:0]      db_btns;                       // debounced buttons
+wire             sysclk;                        // 100MHz clock from on-board 
+
+//Clock Wizard variables
+wire             VGAclk;                        // VGAclk is 25MHz
+wire             Clk_75MHz;                     // Clk generated for 75Mhz
+
 // oscillator   
-wire            sysreset;       // system reset signal – asserted 
+wire             sysreset;                      // system reset signal – asserted 
+
  // high to force reset    
-wire  [4:0]     dig7, dig6, dig5, dig4, // display digits 7-4
-                dig3, dig2, dig1, dig0; // display digits 3-0  
-wire  [7:0]     decpts;         // decimal points  
-wire [7:0]      segs_int;       // segment outputs (internal)  
-wire [63:0]     digits_out;     // digits_out (only for simulation)  
-wire [17:0]     instruction; 
+wire  [4:0]      dig7, dig6, dig5, dig4,        // display digits 7-4
+                 dig3, dig2, dig1, dig0;        // display digits 3-0  
+                
+wire  [7:0]      decpts;                        // decimal points  
+wire  [7:0]      segs_int;                      // segment outputs (internal)  
+wire  [63:0]     digits_out;                    // digits_out (only for simulation)  
+wire  [17:0]     instruction; 
 
  
  // PicoBlaze interface  
@@ -50,11 +80,19 @@ wire        k_write_strobe;
 wire        read_strobe; 
 wire        interrupt;  
 wire        interrupt_ack;  
-wire        sleep;          //kcpsm6_sleep;  
+wire        sleep;                  //kcpsm6_sleep;  
 wire        kcpsm6_reset;  
 wire        cpu_reset;  
 wire        rdl;  
 wire        int_request;
+
+//VGA interface (Colorizer, ICON, DTG)
+wire        video_on;
+wire [1:0]  world_pixel;
+wire [11:0] Screen_Color;
+wire [9:0]  pixel_row;
+wire [9:0]  pixel_column;
+
 
 // new block (only for reference remove later )
 wire [7:0]  motctl;
@@ -83,21 +121,39 @@ assign  dig1 = {5'b11111};
 */
 
  // global assigns  
-assign  sysclk      =   clk;  
-assign  sysreset    =   ~db_btns[0]; // btnCpuReset is asserted low so invert it  
-assign  sw_high     =   db_sw[15:8];  
-assign  sw_low      =   db_sw[7:0]; 
-
-//assign  led         =   {leds_high, leds_low};  
-assign  dp          =   segs_int[7];  
-assign  seg          =   segs_int[6:0];
-assign  JA          =   {sysclk, sysreset, 6'b000000};
+assign  sysclk          =   clk;  
+assign  sysreset        =   ~db_btns[0]; // btnCpuReset is asserted low so invert it  
+assign  sw_high         =   db_sw[15:8];  
+assign  sw_low          =   db_sw[7:0]; 
 
 
-// instantiate the debounce module
-// RESET_POLARITLY_LOW is 1 because btnCpuReset is asserted  
-// high and the debounced version of btnCpuReset becomees  
-// sysreset  
+assign  dp              =   segs_int[7];  
+assign  seg             =   segs_int[6:0];
+assign  JA              =   {sysclk, sysreset, 6'b000000};
+assign  vga_red         =   Screen_Color[11:8];
+assign  vga_green       =   Screen_Color[7:4];
+assign  vga_blue        =   Screen_Color[3:0];
+
+/*==================================================================================*/
+//                       Instantiating the Clock Wizard                             //
+/*==================================================================================*/
+clk_wiz_0_clk_wiz clock_Wizard(
+   // Clock in ports
+    .clk_in1(clk),                       // 100MHz clock from on-board oscillator 
+    // Clock out ports
+    .clk_out1(sysclk),                  //sysclk is 100MHz
+    .clk_out2(Clk_75MHz),  
+    .clk_out3(VGAclk),                  //VGAclk is 25MHz
+    
+    // Status and control signals
+    .reset(1'b0),                       // input reset
+    .locked(locked)                     // outut locked
+);                   
+    
+    
+/*==================================================================================*/
+//                     Instantiating the Debounce Buttons                           //
+/*==================================================================================*/  
 debounce    #(
                 .RESET_POLARITY_LOW(1),
                 .SIMULATE(SIMULATE)  )   
@@ -109,11 +165,12 @@ debounce    #(
                 .swtch_db(db_sw)  
             );
                 
-                
-// instantiate the 7-segment, 8-digit display  
+/*==================================================================================*/
+//                 Instantiating the 7-segment, 8-digit display                     //
+/*==================================================================================*/                
 sevensegment #(   
                 .RESET_POLARITY_LOW(0), 
-                .SIMULATE(SIMULATE)  ) 
+                .SIMULATE(SIMULATE)) 
          SSB    (   // inputs for control signals   
                  .d0(dig0),   
                  .d1(dig1),    
@@ -134,13 +191,41 @@ sevensegment #(
         
         // ouput for simulation only   
         .digits_out(digits_out)  );
-        
-        
-        
-        
-// instantiate the PicoBlaze and instruction ROM 
- assign kcpsm6_sleep = 1'b0;  
- assign kcpsm6_reset = sysreset | rdl;
+
+
+/*==================================================================================*/
+//                             Instantiating the Colorizer                          //
+/*==================================================================================*/        
+colorizer colo(
+                .sysclk(VGAclk),
+                .sysreset(sysreset),
+                .video_on(video_on),
+                .world_pixel(world_pixel),
+                .icon(),
+                .Screen_Color(Screen_Color),
+            );
+
+/*==================================================================================*/
+//                                 Instantiating the DTG                            //
+/*==================================================================================*/ 
+dtg generate_dtg(
+                .clock(sysclk), 
+                .rst(sysreset),
+                .horiz_sync(horiz_sync), 
+                .vert_sync(vert_sync),
+                .video_on(video_on),
+                .pixel_row(),
+                .pixel_column()
+);
+
+
+
+
+/*==================================================================================*/
+//              Instantiating the PicoBlaze and instruction ROM                     //
+/*==================================================================================*/         
+assign kcpsm6_sleep = 1'b0;  
+assign kcpsm6_reset = sysreset | rdl;
 
 kcpsm6  #(   
             .interrupt_vector (12'h3FF),   
@@ -188,8 +273,11 @@ bot ROJO(
     .vid_col(),
     .vid_pixel_out()
 );
-// instantiate the PicoBlaze I/O register interface  
-  
+
+
+/*==================================================================================*/
+//             Instantiating the PicoBlaze I/O register interface                   //
+/*==================================================================================*/  
 nexys4_bot_if #(
                 .RESET_POLARITY_LOW(0)
                 )  
@@ -226,7 +314,8 @@ nexys4_bot_if #(
             
             .sysclk(sysclk),   
             .sysrst(sysreset) 
-            );     
+            ); 
+            
 
 endmodule 
         
