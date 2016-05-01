@@ -80,10 +80,10 @@ module clk_wiz_0_clk_wiz
 
   // Input buffering
   //------------------------------------
-  IBUF clkin1_ibufg
+  /*IBUF clkin1_ibufg
    (.O (clk_in1_clk_wiz_0),
     .I (clk_in1));
-
+*/
 
 
   // Clocking PRIMITIVE
@@ -151,7 +151,7 @@ module clk_wiz_0_clk_wiz
     .CLKOUT6             (clkout6_unused),
      // Input clock control
     .CLKFBIN             (clkfbout_buf_clk_wiz_0),
-    .CLKIN1              (clk_in1_clk_wiz_0),
+    .CLKIN1              (clk_in1),
     .CLKIN2              (1'b0),
      // Tied to always select the primary input clock
     .CLKINSEL            (1'b1),

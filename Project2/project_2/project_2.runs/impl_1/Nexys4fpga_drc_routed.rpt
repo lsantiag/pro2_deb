@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date         : Sat Apr 23 17:34:24 2016
-| Host         : Luis-Personal running 64-bit major release  (build 9200)
+| Date         : Sun May 01 15:47:28 2016
+| Host         : LAPTOP-50QHPPJG running 64-bit major release  (build 9200)
 | Command      : report_drc
 ------------------------------------------------------------------------------------
 
@@ -20,7 +20,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 4
+             Violations found: 5
 
 2. REPORT DETAILS
 -----------------
@@ -40,6 +40,11 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has direct IO Driver  
+Clock net JA_OBUF[7] is directly driven by an IO rather than a Clock Buffer. Driver(s): clk_IBUF_inst/O
 Related violations: <none>
 
 PLIO-7#1 Warning

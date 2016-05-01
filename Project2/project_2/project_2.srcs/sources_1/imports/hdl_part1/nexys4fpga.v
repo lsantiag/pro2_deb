@@ -15,29 +15,32 @@
 */
 module Nexys4fpga ( 
  
-input                   clk,                        // 100MHz clock from on-board oscillator  
+    input                   clk,                        // 100MHz clock from on-board oscillator  
 
 
-input                   btnL, btnR,                     // pushbutton inputs - left (db_btns[4])and right (db_btns[2])  
-input                   btnU, btnD,                     // pushbutton inputs - up (db_btns[3]) and down (db_btns[1])           
-input                   btnC,                           // pushbutton inputs - center button ->  db_btns[5]          
-input                   btnCpuReset,                    // red pushbutton input -> db_btns[0] 
+    input                   btnL, btnR,                     // pushbutton inputs - left (db_btns[4])and right (db_btns[2])  
+    input                   btnU, btnD,                     // pushbutton inputs - up (db_btns[3]) and down (db_btns[1])           
+    input                   btnC,                           // pushbutton inputs - center button ->  db_btns[5]          
+    input                   btnCpuReset,                    // red pushbutton input -> db_btns[0] 
 
-input       [15:0]      sw,                             // switch inputs
+    input       [15:0]      sw,                             // switch inputs
 
-input 	    [9:0]       vid_row,                        // video logic row address
-                        vid_col,                        // video logic column address
+    input 	    [9:0]       vid_row,                        // video logic row address
+                            vid_col,                        // video logic column address
 
-output      [1:0]       vid_pixel_out,                  // pixel (location) value    
-output      [15:0]      led,                            // LED outputs   
-output      [6:0]       seg,                            // Seven segment display cathode pins  
-output                  dp,  
-output      [7:0]       an,                             // Seven segment display anode pins     
-output      [7:0]       JA,                              // JA Header 
+    output      [1:0]       vid_pixel_out,                  // pixel (location) value    
+    output      [15:0]      led,                            // LED outputs   
+    output      [6:0]       seg,                            // Seven segment display cathode pins  
+    output                  dp,  
+    output      [7:0]       an,                             // Seven segment display anode pins     
+    output      [7:0]       JA,                              // JA Header 
 
 //OUTPUT for VGA
-ouput                    vert_sync, horiz_sync,
-ouput        [3:0]       vga_red, vga_green, vga_blue
+	output 			    	vga_hsync,				        // horizontal sync pulse from DTG
+	output 		    		vga_vsync,				        // vertical sync pulse from DTG
+	output 	    [3:0]		vga_red,				        // red pixel data --> send to screen
+	output 	    [3:0]		vga_green,				        // green pixel data --> send to screen
+	output 	    [3:0]		vga_blue				        // blue pixel data --> send to screen
 
 );
 
@@ -54,7 +57,8 @@ wire             sysclk;                        // 100MHz clock from on-board
 
 //Clock Wizard variables
 wire             VGAclk;                        // VGAclk is 25MHz
-wire             Clk_75MHz;                     // Clk generated for 75Mhz
+wire             Clk_75MHz;                     // Clk generated for 75MHz
+wire             Clk_100MHz;                    // Clk generated for 100MHz
 
 // oscillator   
 wire             sysreset;                      // system reset signal – asserted 
@@ -139,9 +143,9 @@ assign  vga_blue        =   Screen_Color[3:0];
 /*==================================================================================*/
 clk_wiz_0_clk_wiz clock_Wizard(
    // Clock in ports
-    .clk_in1(clk),                       // 100MHz clock from on-board oscillator 
+    .clk_in1(sysclk),                   // 100MHz clock from on-board oscillator 
     // Clock out ports
-    .clk_out1(sysclk),                  //sysclk is 100MHz
+    .clk_out1(Clk_100MHz),              //sysclk is 100MHz
     .clk_out2(Clk_75MHz),  
     .clk_out3(VGAclk),                  //VGAclk is 25MHz
     
@@ -158,7 +162,7 @@ debounce    #(
                 .RESET_POLARITY_LOW(1),
                 .SIMULATE(SIMULATE)  )   
         DB  (
-                .clk(sysclk),
+                .clk(Clk_100MHz),
                 .pbtn_in({btnC,btnL,btnU,btnR,btnD,btnCpuReset}),
                 .switch_in(sw),   
                 .pbtn_db(db_btns),   
@@ -186,7 +190,7 @@ sevensegment #(
         .seg(segs_int),      
         .an(an),      
         // clock and reset signals (100 MHz clock, active high reset)   
-        .clk(sysclk),   
+        .clk(Clk_100MHz),   
         .reset(sysreset),      
         
         // ouput for simulation only   
@@ -201,21 +205,21 @@ colorizer colo(
                 .sysreset(sysreset),
                 .video_on(video_on),
                 .world_pixel(world_pixel),
-                .icon(),
-                .Screen_Color(Screen_Color),
+                //.icon(),
+                .Screen_Color(Screen_Color)
             );
 
 /*==================================================================================*/
 //                                 Instantiating the DTG                            //
 /*==================================================================================*/ 
 dtg generate_dtg(
-                .clock(sysclk), 
+                .clock(VGAclk), 
                 .rst(sysreset),
-                .horiz_sync(horiz_sync), 
-                .vert_sync(vert_sync),
+                .horiz_sync(vga_hsync), 
+                .vert_sync(vga_vsync),
                 .video_on(video_on),
-                .pixel_row(),
-                .pixel_column()
+                .pixel_row(pixel_row),
+                .pixel_column(pixel_column)
 );
 
 
@@ -245,7 +249,7 @@ kcpsm6  #(
             .interrupt_ack  (interrupt_ack),   
             .reset    (kcpsm6_reset),   
             .sleep   (kcpsm6_sleep),   
-            .clk    (sysclk));  
+            .clk    (Clk_100MHz));  
        
  proj2demo #(  .C_FAMILY     ("7S"),      //Family 'S6' or 'V6' or '7S'   
              .C_RAM_SIZE_KWORDS (2),    //Program size '1', '2' or '4'   
@@ -255,23 +259,23 @@ kcpsm6  #(
             .enable   (bram_enable),   
             .address   (address),   
             .instruction  (instruction),   
-            .clk    (sysclk));        
+            .clk    (Clk_100MHz));        
           
 
 bot ROJO(
-    .clk(clk),
+    .clk(Clk_100MHz),
     .reset(sysreset),
     .MotCtl_in(motctl),
-    .LocX_reg(locX),		// X-coordinate of rojobot's location		
-    .LocY_reg(locY),        // Y-coordinate of rojobot's location
-    .Sensors_reg(sensors),    // Sensor readings
-    .BotInfo_reg(botinfo),    // Information about rojobot's activity
-    .LMDist_reg(lmdist),        // left motor distance register
+    .LocX_reg(locX),		        // X-coordinate of rojobot's location		
+    .LocY_reg(locY),                // Y-coordinate of rojobot's location
+    .Sensors_reg(sensors),          // Sensor readings
+    .BotInfo_reg(botinfo),          // Information about rojobot's activity
+    .LMDist_reg(lmdist),            // left motor distance register
     .RMDist_reg(rmdist),
     .upd_sysregs(upd_sysregs),
-    .vid_row(),
-    .vid_col(),
-    .vid_pixel_out()
+    .vid_row(pixel_row/4),
+    .vid_col(pixel_column/4),
+    .vid_pixel_out(world_pixel)
 );
 
 
@@ -312,7 +316,7 @@ nexys4_bot_if #(
             .dp(decpts),
             .led(led),
             
-            .sysclk(sysclk),   
+            .sysclk(Clk_100MHz),   
             .sysrst(sysreset) 
             ); 
             

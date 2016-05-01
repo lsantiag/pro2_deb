@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date             : Sat Apr 23 17:34:25 2016
-| Host             : Luis-Personal running 64-bit major release  (build 9200)
+| Date             : Sun May 01 15:47:30 2016
+| Host             : LAPTOP-50QHPPJG running 64-bit major release  (build 9200)
 | Command          : 
 | Design           : Nexys4fpga
 | Device           : xc7a100tcsg324-1
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.152 |
-| Dynamic (W)              | 0.047 |
+| Total On-Chip Power (W)  | 0.276 |
+| Dynamic (W)              | 0.171 |
 | Device Static (W)        | 0.105 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 84.3  |
-| Junction Temperature (C) | 25.7  |
+| Max Ambient (C)          | 83.7  |
+| Junction Temperature (C) | 26.3  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,20 +49,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.003 |        3 |       --- |             --- |
-| Slice Logic              |     0.003 |     1384 |       --- |             --- |
-|   LUT as Logic           |     0.002 |      410 |     63400 |            0.65 |
+| Clocks                   |     0.005 |        6 |       --- |             --- |
+| Slice Logic              |     0.003 |     1469 |       --- |             --- |
+|   LUT as Logic           |     0.002 |      438 |     63400 |            0.69 |
 |   LUT as Distributed RAM |    <0.001 |       48 |     19000 |            0.25 |
-|   Register               |    <0.001 |      656 |    126800 |            0.52 |
+|   Register               |    <0.001 |      696 |    126800 |            0.55 |
 |   CARRY4                 |    <0.001 |       36 |     15850 |            0.23 |
 |   F7/F8 Muxes            |    <0.001 |        8 |     63400 |            0.01 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |       67 |       --- |             --- |
-| Signals                  |     0.004 |     1141 |       --- |             --- |
-| Block RAM                |     0.002 |      2.5 |       135 |            1.85 |
-| I/O                      |     0.035 |       63 |       210 |           30.00 |
+|   Others                 |     0.000 |       71 |       --- |             --- |
+| Signals                  |     0.004 |     1198 |       --- |             --- |
+| Block RAM                |     0.003 |      2.5 |       135 |            1.85 |
+| MMCM                     |     0.121 |        1 |         6 |           16.67 |
+| I/O                      |     0.035 |       77 |       210 |           36.67 |
 | Static Power             |     0.105 |          |           |                 |
-| Total                    |     0.152 |          |           |                 |
+| Total                    |     0.276 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,8 +73,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.027 |       0.012 |      0.015 |
-| Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
+| Vccint    |       1.000 |     0.031 |       0.015 |      0.016 |
+| Vccaux    |       1.800 |     0.086 |       0.068 |      0.018 |
 | Vcco33    |       3.300 |     0.014 |       0.010 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.004 |       0.000 |      0.004 |
@@ -125,11 +126,14 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-------------+--------+-----------------+
-| Clock       | Domain | Constraint (ns) |
-+-------------+--------+-----------------+
-| sys_clk_pin | clk    |            10.0 |
-+-------------+--------+-----------------+
++--------------------+---------------------------------+-----------------+
+| Clock              | Domain                          | Constraint (ns) |
++--------------------+---------------------------------+-----------------+
+| clk_out1_clk_wiz_0 | clock_Wizard/clk_out1_clk_wiz_0 |            10.0 |
+| clk_out3_clk_wiz_0 | clock_Wizard/clk_out3_clk_wiz_0 |            40.0 |
+| clkfbout_clk_wiz_0 | clock_Wizard/clkfbout_clk_wiz_0 |            10.0 |
+| sys_clk_pin        | clk                             |            10.0 |
++--------------------+---------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -141,7 +145,7 @@ Table of Contents
 +-----------------------------------------------------------+-----------+
 | Name                                                      | Power (W) |
 +-----------------------------------------------------------+-----------+
-| Nexys4fpga                                                |     0.047 |
+| Nexys4fpga                                                |     0.171 |
 |   APPCPU                                                  |     0.003 |
 |     active_interrupt_lut                                  |    <0.001 |
 |     address_loop[0].output_data.pc_vector_mux_lut         |    <0.001 |
@@ -193,7 +197,7 @@ Table of Contents
 |   N4IF                                                    |    <0.001 |
 |   PRJ_Demo                                                |    <0.001 |
 |     instantiate_loader.jtag_loader_6_inst                 |    <0.001 |
-|   ROJO                                                    |     0.006 |
+|   ROJO                                                    |     0.007 |
 |     BOTSIMCPU                                             |     0.003 |
 |       address_loop[0].output_data.pc_vector_mux_lut       |    <0.001 |
 |       address_loop[10].output_data.pc_vector_mux_lut      |    <0.001 |
@@ -241,10 +245,10 @@ Table of Contents
 |       upper_reg_banks                                     |    <0.001 |
 |       use_zero_flag_lut                                   |    <0.001 |
 |     BOTSIMPGM                                             |    <0.001 |
-|     MAP                                                   |     0.002 |
-|       MAP                                                 |     0.002 |
+|     MAP                                                   |     0.003 |
+|       MAP                                                 |     0.003 |
 |     WRLDIF                                                |    <0.001 |
-|   SSB                                                     |     0.001 |
+|   SSB                                                     |     0.002 |
 |     Digit0                                                |    <0.001 |
 |     Digit1                                                |    <0.001 |
 |     Digit2                                                |    <0.001 |
@@ -253,6 +257,9 @@ Table of Contents
 |     Digit5                                                |    <0.001 |
 |     Digit6                                                |    <0.001 |
 |     Digit7                                                |    <0.001 |
+|   clock_Wizard                                            |     0.121 |
+|   colo                                                    |    <0.001 |
+|   generate_dtg                                            |    <0.001 |
 +-----------------------------------------------------------+-----------+
 
 

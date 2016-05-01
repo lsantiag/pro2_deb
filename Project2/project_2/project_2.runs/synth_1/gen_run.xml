@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1461455450">
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1462142675">
   <File Type="RDS-DCP" Name="Nexys4fpga.dcp"/>
-  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="Nexys4fpga_utilization_synth.pb"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
-  <File Type="PA-TCL" Name="Nexys4fpga.tcl"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
   <File Type="RDS-PROPCONSTRS" Name="Nexys4fpga_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="Nexys4fpga.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
   <File Type="RDS-RDS" Name="Nexys4fpga.vds"/>
   <File Type="RDS-UTIL" Name="Nexys4fpga_utilization_synth.rpt"/>
   <File Type="VDS-TIMINGSUMMARY" Name="Nexys4fpga_timing_summary_synth.rpt"/>
@@ -28,15 +28,6 @@
         <Attr Name="ImportTime" Val="1413226047"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/bot_pgm.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/bot_pgm.v"/>
-        <Attr Name="ImportTime" Val="1413048571"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/imports/hdl_part1/world_if.v">
@@ -66,19 +57,26 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/proj2demo.v">
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/bot_pgm.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/proj2demo.v"/>
-        <Attr Name="ImportTime" Val="1413345773"/>
+        <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/bot_pgm.v"/>
+        <Attr Name="ImportTime" Val="1413048571"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/sevensegment.v">
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/colorizer.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/sevensegment.v"/>
-        <Attr Name="ImportTime" Val="1459832656"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/proj2demo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/proj2demo.v"/>
+        <Attr Name="ImportTime" Val="1413345773"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -93,10 +91,24 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/dtg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/hdl_part1/debounce.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/debounce.v"/>
         <Attr Name="ImportTime" Val="1459832656"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/clk_wiz_0_clk_wiz.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -111,10 +123,42 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/sevensegment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/sevensegment.v"/>
+        <Attr Name="ImportTime" Val="1459832656"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/hdl_part1/nexys4fpga.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/hdl_part1/nexys4fpga.v"/>
         <Attr Name="ImportTime" Val="1461448750"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="d:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/Creating an Icon ROM in Vivado/ICON_0.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sim/ICON_0.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/ip/ICON_0/sim/ICON_0.vhd"/>
+        <Attr Name="ImportTime" Val="1462082825"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl_part1/ICON.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -128,10 +172,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/imports/constraints/n4DDRfpga_novideo.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/n4DDRfpga_withvideo.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/constraints/n4DDRfpga_novideo.xdc"/>
-        <Attr Name="ImportTime" Val="1429048893"/>
+        <Attr Name="ImportPath" Val="D:/Masters/CourseSpring16/SOC/Projects/project2_release/project2_release/constraints/n4DDRfpga_withvideo.xdc"/>
+        <Attr Name="ImportTime" Val="1428886191"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
